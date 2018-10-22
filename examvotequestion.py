@@ -1,5 +1,10 @@
 class Poll: 
-    #My solution for Poll/tally differs a little bit from the intended solution but I think it is still correct. Rather than storing objects in Poll.s, I store dictionaries (one unique dictionary for each object). In each dictionary, the key is the choice name and the value is a pair with the name of the Poll as the first element and the number of times this given Poll has voted for the given choice as the second element
+    #My solution for Poll/tally differs a little bit from the intended solution but I think it is still correct. 
+    #Rather than storing objects in Poll.s, I store dictionaries (one unique dictionary for each object). 
+    #In each dictionary, the key is the choice name and the value is a pair with the name of the Poll as the first element
+    #and the number of times this given Poll has voted for the given choice as the second element. 
+    #Since each dictionary corresponds to a unique object and contains the name of that object, my solution can access the information needed
+    #from each distinct class, just like the intended solution. 
     s = []
     def __init__(self, n): 
         self.name = n
